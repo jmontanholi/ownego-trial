@@ -25,3 +25,40 @@ body {
 .circle:hover {
   cursor: pointer;
 }
+
+.outer-container {
+  height: 65vh;
+  margin: 10vh auto;
+  display: grid;
+  grid-template-columns: repeat(6, 16%);
+  column-gap: 2rem;
+  row-gap: 2rem;
+  grid-template-rows: repeat(5, 20%);
+  grid-template-areas: 
+  'major major major major content1 content1'
+  'major major major major content1 content1'
+  'major major major major content2 content2'
+  'major major major major content2 content2'
+  'footer footer footer footer footer footer'
+  ;
+}
+
+.inner-larger-div {
+  grid-area: major;
+  background-color: rgb(51, 120, 224);
+}
+
+.small-content1 {
+  grid-area: content1;
+  background-color: rgba(163, 100, 223, 0.904);
+}
+
+.small-content2 {
+  grid-area: content2;
+  background-color: rgba(163, 100, 223, 0.904);
+}
+
+.smaller-inner-container {
+  grid-area: footer;
+  background-color: rgb(92, 177, 92);
+}
