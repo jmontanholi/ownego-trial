@@ -1,0 +1,27 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+}
+
+.header {
+  background-color: rgba(10, 112, 1, 0.726);
+  height: 100px;
+  position: relative;
+}
+
+.circle {
+  position: absolute;
+  bottom: -3rem;
+  left: 2rem;
+  border-radius: 50%;
+  height: 6rem;
+  width: 6rem;
+}
+
+.circle:hover {
+  cursor: pointer;
+}
